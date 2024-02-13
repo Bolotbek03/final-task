@@ -59,7 +59,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Rec />
+      {/* <Rec /> */}
       <PostList />
     </div>
   );
