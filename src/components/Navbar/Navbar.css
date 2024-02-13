@@ -1,0 +1,110 @@
+/* Основные стили для Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: rgb(47, 51, 54) solid;
+}
+
+.navbar-icon {
+  font-size: 24px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+  color: #1da1f2; /* Изменяем цвет при hover */
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.user-info span {
+  margin-left: 10px;
+}
+
+/* Медиа-запрос для уменьшения размеров на более узких экранах (например, мобильных устройствах) */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    margin-top: 10px;
+  }
+
+  .user-info {
+    margin-top: 10px;
+  }
+}
+/* ... (предыдущие стили) */
+
+.navbar-icon img,
+.user-info img {
+  width: 24px; /* Устанавливаем желаемую ширину изображения */
+  height: 24px; /* Устанавливаем желаемую высоту изображения */
+  border-radius: 50%; /* Закругляем углы для круглого вида */
+  margin-right: 8px; /* Добавляем небольшой отступ между изображением и текстом */
+}
+
+/* ... (предыдущие стили) */
+.add-post {
+  height: 25px;
+  /* width: 50px; */
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.user-item {
+  position: relative;
+  cursor: pointer;
+}
+.user-info {
+  position: relative;
+  cursor: pointer;
+}
+
+.accordion {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 150px; /* Adjust the width as needed */
+  background-color: #ffffff; /* Background color for the accordion */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0; /* Border color for the accordion */
+  border-radius: 4px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion p {
+  padding: 10px;
+  margin: 0;
+  color: #333333; /* Text color for the accordion items */
+  border-bottom: 1px solid #e0e0e0; /* Border color for the accordion items */
+  transition: background-color 0.3s;
+}
+
+.accordion p:hover {
+  background-color: #f9f9f9; /* Background color on hover for the accordion items */
+}

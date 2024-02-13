@@ -1,0 +1,76 @@
+body {
+  background-color: #15202b;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.register-container {
+  background-color: black;
+  color: white;
+  padding: 20px; /* Уменьшил внутренний отступ */
+  border-radius: 8px;
+  width: 400px; /* Уменьшил ширину формы */
+  margin: auto;
+
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: calc(100% - 10px); /* Учтем внутренний padding */
+  padding: 10px; /* Уменьшил внутренний отступ */
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border: 1px solid #2e4453;
+  border-radius: 6px;
+  background-color: #192734;
+  color: white;
+}
+
+button {
+  background-color: #1da1f2;
+  color: white;
+  padding: 12px; /* Уменьшил внутренний отступ */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0d8ed9;
+}
+
+p {
+  margin-top: 10px; /* Уменьшил отступ сверху */
+  font-size: 14px; /* Уменьшил размер шрифта */
+}
+
+p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a {
+  color: #1da1f2;
+}
+
+a:hover {
+  text-decoration: underline;
+}
